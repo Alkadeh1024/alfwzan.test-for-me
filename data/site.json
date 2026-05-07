@@ -25,7 +25,15 @@
     "footer.contact": "قريبا",
     "footer.copyright": "© مركز الفوزان لتحفيظ القرآن الكريم — جميع الحقوق محفوظة"
   },
-  "aboutMedia": [],
+  "aboutMedia": [
+    {
+      "id": "ab44mnd2kdsd",
+      "type": "image",
+      "caption": "تجربة",
+      "ext": "jpeg",
+      "src": "media/ab44mnd2kdsd.jpeg"
+    }
+  ],
   "achievements": [],
   "activities": [],
   "halaqat": [],
