@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>بحث الطلاب — مركز الفوزان</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Tajawal:wght@300;400;500;700;900&family=Amiri:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="headerSlot"></div>
+  <main>
+    <section class="hero" style="padding:46px 0 14px">
+      <div class="container">
+        <span class="eyebrow">﷽</span>
+        <h1 data-edit="students.title" style="margin-top:6px">بحث الطلاب</h1>
+        <p class="lead" data-edit="students.lead">يمكن لولي الأمر البحث عن ابنه برقم تسلسلي أو بالاسم أو باسم الحلقة لمعرفة الحضور وتقدير الحفظ.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="search-card">
+          <div class="row">
+            <div class="field">
+              <label data-i18n="fld_serial">الرقم التسلسلي</label>
+              <input type="text" id="qSerial" placeholder="1024" data-testid="search-serial"/>
+            </div>
+            <div class="field">
+              <label data-i18n="fld_name">اسم الطالب</label>
+              <input type="text" id="qName" data-testid="search-name"/>
+            </div>
+            <div class="field">
+              <label data-i18n="fld_halaqa">اسم الحلقة</label>
+              <input type="text" id="qHalaqa" data-testid="search-halaqa"/>
+            </div>
+            <div class="field">
+              <label data-i18n="fld_level">المرحلة</label>
+              <select id="qLevel" data-testid="search-level">
+                <option value="" data-i18n="fld_all">الكل</option>
+                <option data-i18n="lvl_primary">ابتدائي</option>
+                <option data-i18n="lvl_middle">متوسط</option>
+                <option data-i18n="lvl_high">ثانوي</option>
+              </select>
+            </div>
+          </div>
+          <button class="btn btn-primary" id="searchBtn" data-testid="search-btn" data-i18n="search">بحث</button>
+        </div>
+
+        <div id="results" data-testid="search-results"></div>
+        <div id="studentDetail" data-testid="student-detail" style="margin-top:18px"></div>
+      </div>
+    </section>
+  </main>
+  <div id="footerSlot"></div>
+  <script src="js/common.js"></script>
+  <script src="js/page3.js"></script>
+</body>
+</html>
