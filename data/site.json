@@ -25,9 +25,34 @@
     "footer.contact": "قريبا",
     "footer.copyright": "© مركز الفوزان لتحفيظ القرآن الكريم — جميع الحقوق محفوظة"
   },
-  "aboutMedia": [],
-  "achievements": [],
-  "activities": [],
+  "aboutMedia": [
+    {
+      "id": "3en6nlzwoewq",
+      "type": "image",
+      "caption": "تجربة",
+      "ext": "jpeg",
+      "src": "media/3en6nlzwoewq.jpeg"
+    }
+  ],
+  "achievements": [
+    {
+      "id": "zuy0uka0p3fe",
+      "type": "image",
+      "title": "شعار بالذكاء الاصطناعي",
+      "desc": "تجربة الصور في الموقع",
+      "ext": "jpeg",
+      "src": "media/zuy0uka0p3fe.jpeg"
+    }
+  ],
+  "activities": [
+    {
+      "id": "93xp2zo5sk2q",
+      "title": "برنامج الحزب المفصل",
+      "desc": "برنامج يهتم بتعليم الطلاب اساسيات التجويد و تعليمهم تدبر الايات و معرفة تفسير بعض السور",
+      "startISO": "2026-05-13T15:00:00.000Z",
+      "endISO": "2026-06-11T15:30:00.000Z"
+    }
+  ],
   "halaqat": [
     {
       "id": "mz0kddd3bc5w",
