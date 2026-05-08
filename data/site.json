@@ -25,18 +25,24 @@
     "footer.contact": "قريبا",
     "footer.copyright": "© مركز الفوزان لتحفيظ القرآن الكريم — جميع الحقوق محفوظة"
   },
-  "aboutMedia": [
-    {
-      "id": "gn7aaokvxlzr",
-      "type": "video",
-      "caption": "",
-      "ext": "mp4",
-      "src": "media/gn7aaokvxlzr.mp4"
-    }
-  ],
+  "aboutMedia": [],
   "achievements": [],
   "activities": [],
-  "halaqat": [],
-  "students": [],
+  "halaqat": [
+    {
+      "id": "mz0kddd3bc5w",
+      "name": "البخاري",
+      "level": "ابتدائي"
+    }
+  ],
+  "students": [
+    {
+      "id": "lo4vq74ibsis",
+      "name": "خالد محمد",
+      "serial": "2001",
+      "halaqaId": "mz0kddd3bc5w",
+      "level": "ابتدائي"
+    }
+  ],
   "attendance": {}
 }
