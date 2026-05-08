@@ -25,15 +25,7 @@
     "footer.contact": "قريبا",
     "footer.copyright": "© مركز الفوزان لتحفيظ القرآن الكريم — جميع الحقوق محفوظة"
   },
-  "aboutMedia": [
-    {
-      "id": "uhwy6jx3ct2q",
-      "type": "video",
-      "caption": "تجربة الفيديو",
-      "ext": "mp4",
-      "src": "media/uhwy6jx3ct2q.mp4"
-    }
-  ],
+  "aboutMedia": [],
   "achievements": [],
   "activities": [],
   "halaqat": [],
