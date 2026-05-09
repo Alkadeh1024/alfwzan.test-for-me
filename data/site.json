@@ -55,19 +55,66 @@
   ],
   "halaqat": [
     {
-      "id": "mz0kddd3bc5w",
-      "name": "البخاري",
-      "level": "ابتدائي"
-    }
-  ],
-  "students": [
+      "id": "8f85jzrk9td0",
+      "name": "الاتقان",
+      "level": "ثانوي"
+    },
     {
-      "id": "lo4vq74ibsis",
-      "name": "خالد محمد",
-      "serial": "2001",
-      "halaqaId": "mz0kddd3bc5w",
+      "id": "5xolfdwfa12c",
+      "name": "الرائدة",
+      "level": "ثانوي"
+    },
+    {
+      "id": "emiswhzia59o",
+      "name": "ابن تيمية",
+      "level": "ثانوي"
+    },
+    {
+      "id": "ydye69uyatnw",
+      "name": "ابي حنيفة",
+      "level": "ثانوي"
+    },
+    {
+      "id": "utxf2s0mb6zg",
+      "name": "أحمد بن حنبل",
+      "level": "متوسط"
+    },
+    {
+      "id": "8i2n4iv8bi3g",
+      "name": "علي ابن المديني",
+      "level": "متوسط"
+    },
+    {
+      "id": "yncqyyd1braz",
+      "name": "الشافعي",
+      "level": "متوسط"
+    },
+    {
+      "id": "m6qgif9dc3ms",
+      "name": "الترمذي",
+      "level": "ابتدائي"
+    },
+    {
+      "id": "m0vu8f2cciik",
+      "name": "الشعبي",
+      "level": "ابتدائي"
+    },
+    {
+      "id": "fomiae7gdjzg",
+      "name": "ابو داوود",
+      "level": "ابتدائي"
+    },
+    {
+      "id": "7t48tahedsno",
+      "name": "ابن القيم",
+      "level": "ابتدائي"
+    },
+    {
+      "id": "brg99eqcdzpf",
+      "name": "النسائي",
       "level": "ابتدائي"
     }
   ],
+  "students": [],
   "attendance": {}
 }
