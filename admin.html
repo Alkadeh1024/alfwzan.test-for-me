@@ -13,27 +13,23 @@
   <div id="headerSlot"></div>
   <main>
     <div class="container">
-
-      <!-- Login -->
       <div id="loginView" class="auth-wrap">
         <div class="auth-card">
           <h2>دخول المشرف</h2>
           <p class="muted">أدخل بيانات الدخول للمتابعة</p>
           <div class="field"><label>الحساب</label>
-            <input type="text" id="user" placeholder="alfwzan@admin أو alfwzan@msh" data-testid="login-user"/></div>
+            <input type="text" id="user" placeholder="alfwzan@admin" data-testid="login-user"/></div>
           <div class="field"><label>كلمة المرور</label>
             <input type="password" id="pass" data-testid="login-pass"/></div>
           <button class="btn btn-primary btn-block" id="loginBtn" data-testid="login-btn">دخول</button>
           <p id="loginErr" style="color:#b3261e;margin-top:10px;display:none" data-testid="login-err">بيانات الدخول غير صحيحة.</p>
         </div>
       </div>
-
-      <!-- Dashboard -->
       <div id="dashView" style="display:none">
         <div class="dash-topbar">
           <div>
             <h1 style="margin:0;font-family:'Aref Ruqaa',serif;color:var(--primary)">لوحة المشرف</h1>
-            <p class="muted" style="margin:4px 0 0">عدّل المحتوى محليا، ثم اضغط <b>نشر التغييرات</b> لرفعها على GitHub.</p>
+            <p class="muted" style="margin:4px 0 0">عدّل المحتوى، ثم اضغط <b>نشر التغييرات</b> لرفعها على GitHub.</p>
           </div>
           <div class="topbar-actions">
             <button class="btn btn-accent" id="publishBtn" data-testid="publish-btn">نشر التغييرات</button>
@@ -41,139 +37,92 @@
             <button class="btn btn-ghost btn-sm" id="pullBtn" data-testid="pull-btn">جلب من GitHub</button>
           </div>
         </div>
-
         <div class="dash">
           <aside class="dash-side" data-testid="dash-side">
-            <a href="#about" class="active" data-tab="about">لمحة عنا (نصوص + وسائط)</a>
+            <a href="#about" class="active" data-tab="about">لمحة عنا</a>
             <a href="#ach" data-tab="ach">الإنجازات</a>
             <a href="#act" data-tab="act">الأنشطة</a>
             <a href="#halaqat" data-tab="halaqat">الحلقات</a>
             <a href="#students" data-tab="students">الطلاب</a>
             <a href="#texts" data-tab="texts">نصوص الموقع</a>
-            <a href="#data" data-tab="data">حفظ/استيراد البيانات</a>
-            <a href="#" id="logoutLink" data-testid="logout-link" style="color:#b3261e">تسجيل خروج</a>
+            <a href="#data" data-tab="data">البيانات</a>
+            <a href="#" id="logoutLink" data-testid="logout-link" style="color:#b3261e">خروج</a>
           </aside>
           <section class="dash-main">
-
-            <!-- About media -->
             <div class="tab active" id="tab-about">
-              <h2>لمحة عنا — صور وفيديوهات الصفحة الرئيسية</h2>
-              <p class="muted">أضف صور أو فيديوهات تظهر بجانب النص في الصفحة الرئيسية. اضغط على الصورة في الموقع لتكبيرها.</p>
+              <h2>الصور والفيديوهات</h2>
               <div class="row">
-                <div class="field"><label>اختر ملفات (صور/فيديو)</label>
-                  <input type="file" id="aboutFiles" multiple accept="image/*,video/*" data-testid="about-files"/></div>
-                <div class="field"><label>وصف اختياري</label>
-                  <input type="text" id="aboutCaption" placeholder="مثال: حفل التكريم 2025" data-testid="about-caption"/></div>
+                <div class="field"><label>ملفات</label><input type="file" id="aboutFiles" multiple accept="image/*,video/*"/></div>
+                <div class="field"><label>وصف</label><input type="text" id="aboutCaption"/></div>
               </div>
-              <button class="btn btn-primary" id="aboutAdd" data-testid="about-add">إضافة</button>
+              <button class="btn btn-primary" id="aboutAdd">إضافة</button>
               <div id="aboutList" class="gallery-grid" style="margin-top:18px"></div>
             </div>
-
-            <!-- Achievements -->
             <div class="tab" id="tab-ach">
-              <h2>الإنجازات والتكريمات</h2>
+              <h2>الإنجازات</h2>
               <div class="row">
-                <div class="field"><label>الملفات (صور/فيديوهات — يمكن اختيار أكثر من ملف)</label><input type="file" id="achFile" multiple accept="image/*,video/*" data-testid="ach-file"/></div>
-                <div class="field"><label>العنوان</label><input type="text" id="achTitle" data-testid="ach-title"/></div>
+                <div class="field"><label>الملف</label><input type="file" id="achFile" multiple accept="image/*,video/*"/></div>
+                <div class="field"><label>العنوان</label><input type="text" id="achTitle"/></div>
               </div>
-              <div class="field"><label>التعريف عن الصورة / لماذا أُضيفت</label><textarea id="achDesc" rows="2" data-testid="ach-desc"></textarea></div>
-              <button class="btn btn-primary" id="achAdd" data-testid="ach-add">إضافة إنجاز</button>
+              <div class="field"><label>الوصف</label><textarea id="achDesc" rows="2"></textarea></div>
+              <button class="btn btn-primary" id="achAdd">إضافة</button>
               <div id="achList" class="gallery-grid" style="margin-top:18px"></div>
             </div>
-
-            <!-- Activities -->
             <div class="tab" id="tab-act">
               <h2>الأنشطة</h2>
               <div class="row">
-                <div class="field"><label>عنوان النشاط</label><input type="text" id="actTitle" data-testid="act-title"/></div>
-                <div class="field"><label>تاريخ ووقت البداية</label><input type="datetime-local" id="actStart" data-testid="act-start"/></div>
-                <div class="field"><label>تاريخ ووقت النهاية (اختياري)</label><input type="datetime-local" id="actEnd" data-testid="act-end"/></div>
+                <div class="field"><label>العنوان</label><input type="text" id="actTitle"/></div>
+                <div class="field"><label>البداية</label><input type="datetime-local" id="actStart"/></div>
               </div>
-              <div class="field"><label>وصف النشاط</label><textarea id="actDesc" rows="2" data-testid="act-desc"></textarea></div>
-              <button class="btn btn-primary" id="actAdd" data-testid="act-add">إضافة نشاط</button>
-              <div id="actList" style="margin-top:18px" class="activity-grid"></div>
+              <button class="btn btn-primary" id="actAdd">إضافة</button>
+              <div id="actList" style="margin-top:18px"></div>
             </div>
-
-            <!-- Halaqat -->
             <div class="tab" id="tab-halaqat">
               <h2>الحلقات</h2>
-              <p class="muted">أضف الحلقات أولا، ثم انتقل إلى تبويب الطلاب لإضافة طلاب لكل حلقة.</p>
               <div class="row">
-                <div class="field"><label>اسم الحلقة</label><input type="text" id="halaqaName" data-testid="halaqa-name"/></div>
-                <div class="field"><label>المرحلة</label>
-                  <select id="halaqaLevel" data-testid="halaqa-level"><option>ابتدائي</option><option>متوسط</option><option>ثانوي</option></select></div>
+                <div class="field"><label>الاسم</label><input type="text" id="halaqaName"/></div>
+                <div class="field"><label>المرحلة</label><select id="halaqaLevel"><option>ابتدائي</option><option>متوسط</option><option>ثانوي</option></select></div>
               </div>
-              <button class="btn btn-primary" id="halaqaAdd" data-testid="halaqa-add">إضافة حلقة</button>
+              <button class="btn btn-primary" id="halaqaAdd">إضافة</button>
               <div id="halaqaList" style="margin-top:18px"></div>
             </div>
-
-            <!-- Students -->
             <div class="tab" id="tab-students">
               <h2>الطلاب</h2>
               <div class="row">
-                <div class="field"><label>الاسم</label><input type="text" id="stuName" data-testid="stu-name"/></div>
-                <div class="field"><label>الرقم التسلسلي</label><input type="text" id="stuSerial" data-testid="stu-serial"/></div>
-                <div class="field"><label>الحلقة</label><select id="stuHalaqa" data-testid="stu-halaqa"></select></div>
-                <div class="field"><label>المرحلة</label>
-                  <select id="stuLevel" data-testid="stu-level"><option>ابتدائي</option><option>متوسط</option><option>ثانوي</option></select></div>
+                <div class="field"><label>الاسم</label><input type="text" id="stuName"/></div>
+                <div class="field"><label>الرقم</label><input type="text" id="stuSerial"/></div>
+                <div class="field"><label>الحلقة</label><select id="stuHalaqa"></select></div>
               </div>
-              <button class="btn btn-primary" id="stuAdd" data-testid="stu-add">إضافة طالب</button>
+              <button class="btn btn-primary" id="stuAdd">إضافة</button>
               <div id="stuList" style="margin-top:18px"></div>
             </div>
-
-            <!-- Texts -->
             <div class="tab" id="tab-texts">
-              <h2>تعديل نصوص الموقع</h2>
-              <p class="muted">يمكنك أيضا الضغط على أي نص داخل صفحات الموقع لتعديله مباشرة وأنت مسجّل دخول المشرف.</p>
+              <h2>نصوص الموقع</h2>
               <div id="textsForm"></div>
-              <button class="btn btn-primary" id="textsSave" data-testid="texts-save">حفظ كل النصوص</button>
+              <button class="btn btn-primary" id="textsSave">حفظ النصوص</button>
             </div>
-
-            <!-- Data -->
             <div class="tab" id="tab-data">
-              <h2>حفظ / استيراد البيانات</h2>
-              <p class="muted">يمكنك تصدير البيانات كملف <code>site.json</code> للنسخ الاحتياطي، أو استيراد ملف موجود.</p>
-              <div style="display:flex;gap:10px;flex-wrap:wrap">
-                <button class="btn btn-primary" id="exportBtn" data-testid="export-btn">تصدير site.json</button>
-                <label class="btn btn-ghost" style="display:inline-block">
-                  استيراد site.json
-                  <input type="file" id="importFile" accept="application/json" style="display:none" data-testid="import-file"/>
-                </label>
-                <button class="btn btn-danger" id="resetBtn" data-testid="reset-btn">إعادة الضبط</button>
-              </div>
+              <h2>البيانات</h2>
+              <button class="btn btn-primary" id="exportBtn">تصدير site.json</button>
+              <input type="file" id="importFile" accept="application/json" style="display:none"/>
+              <button class="btn btn-ghost" onclick="document.getElementById('importFile').click()">استيراد</button>
             </div>
-
           </section>
         </div>
       </div>
     </div>
   </main>
-
-  <!-- GitHub publish modal -->
-  <div class="modal" id="ghModal" data-testid="gh-modal">
+  <div class="modal" id="ghModal">
     <div class="modal-card">
-      <button class="modal-close" id="ghClose" data-testid="gh-close" aria-label="إغلاق">×</button>
-      <h2>إعدادات النشر إلى GitHub</h2>
-      <p class="muted">هذه البيانات تُحفظ على جهازك فقط (في المتصفح) وتُستخدم لرفع تعديلاتك إلى مستودع الموقع على GitHub.</p>
-
-      <div class="field"><label>اسم المستخدم على GitHub</label>
-        <input type="text" id="ghUser" placeholder="مثال: Alkadeh1024" data-testid="gh-user"/></div>
-      <div class="field"><label>اسم المستودع (Repository)</label>
-        <input type="text" id="ghRepo" placeholder="مثال: alfwzan" data-testid="gh-repo"/></div>
-      <div class="field"><label>الفرع (Branch)</label>
-        <input type="text" id="ghBranch" value="main" data-testid="gh-branch"/></div>
-      <div class="field"><label>Personal Access Token (PAT)</label>
-        <input type="password" id="ghPat" placeholder="ghp_..." data-testid="gh-pat"/></div>
-
-      <p class="muted" style="font-size:13px">لإنشاء التوكن: GitHub → Settings → Developer settings → Personal access tokens → Fine-grained tokens → أعطه صلاحية «Contents: Read and write» على مستودع الموقع فقط.</p>
-
-      <div style="display:flex;gap:10px;justify-content:flex-end;margin-top:14px">
-        <button class="btn btn-ghost" id="ghClear" data-testid="gh-clear">مسح</button>
-        <button class="btn btn-primary" id="ghSave" data-testid="gh-save">حفظ</button>
-      </div>
+      <button class="modal-close" id="ghClose">×</button>
+      <h2>إعدادات GitHub</h2>
+      <div class="field"><label>User</label><input type="text" id="ghUser"/></div>
+      <div class="field"><label>Repo</label><input type="text" id="ghRepo"/></div>
+      <div class="field"><label>Branch</label><input type="text" id="ghBranch" value="main"/></div>
+      <div class="field"><label>Token (PAT)</label><input type="password" id="ghPat"/></div>
+      <button class="btn btn-primary" id="ghSave">حفظ</button>
     </div>
   </div>
-
   <div id="footerSlot"></div>
   <script src="js/common.js"></script>
   <script src="js/admin.js"></script>

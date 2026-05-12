@@ -3,30 +3,19 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>الأنشطة — مركز الفوزان</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Tajawal:wght@300;400;500;700;900&family=Amiri:wght@400;700&display=swap" rel="stylesheet" />
+  <title>الأنشطة — الفوزان</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <div id="headerSlot"></div>
   <main>
-    <section class="hero" style="padding:46px 0 14px">
-      <div class="container">
-        <span class="eyebrow">﷽</span>
-        <h1 data-edit="activities.title" style="margin-top:6px">أنشطة المركز</h1>
-        <p class="lead" data-edit="activities.lead">تابع الأنشطة الحالية والقادمة، مع عداد تنازلي لكل نشاط قادم.</p>
-      </div>
-    </section>
-    <section class="section">
-      <div class="container">
-        <h2 id="curHead" style="font-family:'Aref Ruqaa',serif;color:var(--primary)">الأنشطة الحالية</h2>
-        <div id="currentGrid" class="activity-grid" data-testid="current-activities"></div>
-        <h2 id="upHead" style="margin-top:36px;font-family:'Aref Ruqaa',serif;color:var(--primary)">الأنشطة القادمة</h2>
-        <div id="upcomingGrid" class="activity-grid" data-testid="upcoming-activities"></div>
-      </div>
-    </section>
+    <div class="container">
+      <h1>أنشطة المركز</h1>
+      <h2 id="curHead">الأنشطة الحالية</h2>
+      <div id="currentGrid" class="activity-grid"></div>
+      <h2 id="upHead">الأنشطة القادمة</h2>
+      <div id="upcomingGrid" class="activity-grid"></div>
+    </div>
   </main>
   <div id="footerSlot"></div>
   <script src="js/common.js"></script>

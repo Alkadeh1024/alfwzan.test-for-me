@@ -1,120 +1,54 @@
 {
   "texts": {
-    "hero.title": "مدرسة الفوزان لتحفيظ القرآن الكريم",
+    "hero.title": "(مجمع الفوزان التعليمي) حلقات الإمام يحيى بن معين رحمه الله بجامع الفوزان بحي منفوحة",
+    "hero.title.en": "Alfwzan Center for Memorizing the Holy Quran",
     "hero.lead": "بيت يجمع القلوب على كتاب الله، يرعى الناشئة بالتلاوة والحفظ والتجويد، ويغرس فيهم محبة القرآن وأخلاقه.",
-    "stats.students": "+320",
-    "stats.teachers": "+16",
-    "stats.years": "+20",
+    "hero.lead.en": "A home that gathers hearts upon the Book of Allah, nurturing youth in recitation, memorization and tajwid.",
+    "stats.students": "+250",
+    "stats.teachers": "+15",
+    "stats.years": "+12",
     "about.title": "لمحة عنّا",
+    "about.title.en": "About us",
     "about.paragraph1": "انطلق مركز الفوزان لتحفيظ القرآن الكريم برسالة سامية: تنشئة جيل قرآني يحمل الكتاب في صدره وعلى لسانه، ويعمل به في حياته. نقدّم برامج متدرّجة في الحفظ والتجويد لمختلف الأعمار، يشرف عليها نخبة من المعلمين المتخصصين.",
-    "about.paragraph2": "نهتم ببناء شخصية الطالب القرآنية من خلال مسابقات، برامج، ولقاءات تربوية تثري الجانب الإيماني والأخلاقي، إلى جانب التركيز على الإتقان والمراجعة المستمرة.",
+    "about.paragraph1.en": "Alfwzan Center was founded with a noble mission: raising a Quranic generation that carries the Book in their hearts and tongues, and lives by it. We offer graduated programs in memorization and tajwid for all ages, supervised by a select group of specialized teachers.",
+    "about.paragraph2": "نهتم ببناء شخصية الطالب القرآنية من خلال مسابقات، رحلات، ولقاءات تربوية تثري الجانب الإيماني والأخلاقي، إلى جانب التركيز على الإتقان والمراجعة المستمرة.",
+    "about.paragraph2.en": "We build the Quranic character of our students through competitions, trips and educational meetings that enrich the faith and moral aspects, alongside focus on mastery and continuous review.",
     "about.feature1": "حلقات حفظ بمستويات متعددة",
+    "about.feature1.en": "Multi-level memorization halaqat",
     "about.feature2": "إجازات ومراجعة بالأسانيد",
+    "about.feature2.en": "Ijazat and chained review",
     "about.feature3": "مسابقات وأنشطة تربوية",
-    "about.feature4": "برامج وفعاليات سنوية",
+    "about.feature3.en": "Competitions and educational activities",
+    "about.feature4": "رحلات وفعاليات سنوية",
+    "about.feature4.en": "Annual trips and events",
     "register.title": "سجّل في حلقات الفوزان",
+    "register.title.en": "Register in Alfwzan Halaqat",
     "register.text": "يسرّنا انضمامك إلى أسرة المركز. اضغط على الزر التالي لفتح نموذج التسجيل وملء بياناتك.",
+    "register.text.en": "We welcome you to the family of the center. Click the button below to open the registration form.",
     "register.url": "#",
     "achievements.title": "إنجازاتنا وتكريماتنا",
+    "achievements.title.en": "Our achievements and honors",
     "achievements.lead": "صور للطلاب المثاليين، الشهادات، وفعاليات المسابقات.",
+    "achievements.lead.en": "Photos of model students, certificates, and competition events.",
     "activities.title": "أنشطة المركز",
+    "activities.title.en": "Center activities",
     "activities.lead": "تابع الأنشطة الحالية والقادمة، مع عداد تنازلي لكل نشاط قادم.",
+    "activities.lead.en": "Follow current and upcoming activities, with a countdown for each upcoming event.",
     "students.title": "بحث الطلاب",
+    "students.title.en": "Student lookup",
     "students.lead": "يمكن لولي الأمر البحث عن ابنه برقم تسلسلي أو بالاسم أو باسم الحلقة لمعرفة الحضور وتقدير الحفظ.",
+    "students.lead.en": "Parents can search by serial, student name, or halaqa name to view attendance and memorization grade.",
     "footer.about": "رسالتنا أن نكون صحبة قرآنية تعين على الحفظ والعمل بكتاب الله.",
+    "footer.about.en": "Our mission is to be a Quranic companionship that helps in memorizing and acting upon the Book of Allah.",
     "footer.contact": "قريبا",
-    "footer.copyright": "© مركز الفوزان لتحفيظ القرآن الكريم — جميع الحقوق محفوظة"
+    "footer.contact.en": "Coming soon",
+    "footer.copyright": "© مركز الفوزان لتحفيظ القرآن الكريم — جميع الحقوق محفوظة",
+    "footer.copyright.en": "© Alfwzan Center for Memorizing the Holy Quran — All rights reserved"
   },
-  "aboutMedia": [
-    {
-      "id": "3en6nlzwoewq",
-      "type": "image",
-      "caption": "تجربة",
-      "ext": "jpeg",
-      "src": "media/3en6nlzwoewq.jpeg"
-    }
-  ],
-  "achievements": [
-    {
-      "id": "zuy0uka0p3fe",
-      "type": "image",
-      "title": "شعار بالذكاء الاصطناعي",
-      "desc": "تجربة الصور في الموقع",
-      "ext": "jpeg",
-      "src": "media/zuy0uka0p3fe.jpeg"
-    }
-  ],
-  "activities": [
-    {
-      "id": "93xp2zo5sk2q",
-      "title": "برنامج الحزب المفصل",
-      "desc": "برنامج يهتم بتعليم الطلاب اساسيات التجويد و تعليمهم تدبر الايات و معرفة تفسير بعض السور",
-      "startISO": "2026-05-13T15:00:00.000Z",
-      "endISO": "2026-06-11T15:30:00.000Z"
-    }
-  ],
-  "halaqat": [
-    {
-      "id": "8f85jzrk9td0",
-      "name": "الاتقان",
-      "level": "ثانوي"
-    },
-    {
-      "id": "5xolfdwfa12c",
-      "name": "الرائدة",
-      "level": "ثانوي"
-    },
-    {
-      "id": "emiswhzia59o",
-      "name": "ابن تيمية",
-      "level": "ثانوي"
-    },
-    {
-      "id": "ydye69uyatnw",
-      "name": "ابي حنيفة",
-      "level": "ثانوي"
-    },
-    {
-      "id": "utxf2s0mb6zg",
-      "name": "أحمد بن حنبل",
-      "level": "متوسط"
-    },
-    {
-      "id": "8i2n4iv8bi3g",
-      "name": "علي ابن المديني",
-      "level": "متوسط"
-    },
-    {
-      "id": "yncqyyd1braz",
-      "name": "الشافعي",
-      "level": "متوسط"
-    },
-    {
-      "id": "m6qgif9dc3ms",
-      "name": "الترمذي",
-      "level": "ابتدائي"
-    },
-    {
-      "id": "m0vu8f2cciik",
-      "name": "الشعبي",
-      "level": "ابتدائي"
-    },
-    {
-      "id": "fomiae7gdjzg",
-      "name": "ابو داوود",
-      "level": "ابتدائي"
-    },
-    {
-      "id": "7t48tahedsno",
-      "name": "ابن القيم",
-      "level": "ابتدائي"
-    },
-    {
-      "id": "brg99eqcdzpf",
-      "name": "النسائي",
-      "level": "ابتدائي"
-    }
-  ],
+  "aboutMedia": [],
+  "achievements": [],
+  "activities": [],
+  "halaqat": [],
   "students": [],
   "attendance": {}
 }
